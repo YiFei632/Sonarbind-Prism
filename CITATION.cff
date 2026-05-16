@@ -1,0 +1,8 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+authors:
+  - name: "Yifei Wang"
+title: "Sonarbind Prism"
+date-released: 2026-05-16
+url: "https://github.com/YiFei632/Sonarbind-Prism"
+license: Apache-2.0
