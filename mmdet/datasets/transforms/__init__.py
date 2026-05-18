@@ -12,8 +12,9 @@ from .instaboost import InstaBoost
 from .loading import (FilterAnnotations, InferencerLoader, LoadAnnotations,
                       LoadEmptyAnnotations, LoadImageFromNDArray,
                       LoadMultiChannelImageFromFiles, LoadPanopticAnnotations,
-                      LoadProposals, LoadTrackAnnotations)
-from .text_transformers import LoadTextAnnotations, RandomSamplingNegPos
+                      LoadProposals, LoadSonarImage, LoadTrackAnnotations)
+from .text_transformers import (LoadClassNamesAsText, LoadTextAnnotations,
+                                RandomSamplingNegPos)
 from .transformers_glip import GTBoxSubOne_GLIP, RandomFlip_GLIP
 from .transforms import (Albu, CachedMixUp, CachedMosaic, CopyPaste, CutOut,
                          Expand, FixScaleResize, FixShapeResize,
@@ -27,7 +28,8 @@ from .wrappers import MultiBranch, ProposalBroadcaster, RandomOrder
 __all__ = [
     'PackDetInputs', 'ToTensor', 'ImageToTensor', 'Transpose',
     'LoadImageFromNDArray', 'LoadAnnotations', 'LoadPanopticAnnotations',
-    'LoadMultiChannelImageFromFiles', 'LoadProposals', 'Resize', 'RandomFlip',
+    'LoadMultiChannelImageFromFiles', 'LoadProposals', 'LoadSonarImage',
+    'Resize', 'RandomFlip',
     'RandomCrop', 'SegRescale', 'MinIoURandomCrop', 'Expand',
     'PhotoMetricDistortion', 'Albu', 'InstaBoost', 'RandomCenterCropPad',
     'AutoAugment', 'CutOut', 'ShearX', 'ShearY', 'Rotate', 'Color', 'Equalize',
@@ -41,5 +43,5 @@ __all__ = [
     'LoadTrackAnnotations', 'BaseFrameSample', 'UniformRefFrameSample',
     'PackTrackInputs', 'PackReIDInputs', 'FixScaleResize',
     'ResizeShortestEdge', 'GTBoxSubOne_GLIP', 'RandomFlip_GLIP',
-    'RandomSamplingNegPos', 'LoadTextAnnotations'
+    'RandomSamplingNegPos', 'LoadTextAnnotations', 'LoadClassNamesAsText'
 ]

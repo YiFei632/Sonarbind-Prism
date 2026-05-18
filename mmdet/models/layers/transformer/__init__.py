@@ -20,7 +20,7 @@ from .third_grounding_dino_layers import (ThirdGroundingDinoTransformerDecoder,
                                           ThirdGroundingDinoTransformerEncoder)
 from .sonarbind_layers import (SonarBindTransformerDecoderLayer,
                                SonarBindTransformerEncoder,
-                               SonarBindTransformerDecoder)
+                               SonarBindTransformerDecoder)                                          
 from .mask2former_layers import (Mask2FormerTransformerDecoder,
                                  Mask2FormerTransformerDecoderLayer,
                                  Mask2FormerTransformerEncoder)

@@ -28,6 +28,7 @@ class DINO(DeformableDETR):
 
     def __init__(self, *args, dn_cfg: OptConfigType = None, **kwargs) -> None:
         super().__init__(*args, **kwargs)
+        
         assert self.as_two_stage, 'as_two_stage must be True for DINO'
         assert self.with_box_refine, 'with_box_refine must be True for DINO'
 
